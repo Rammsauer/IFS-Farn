@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apane" prefHeight="451.5" prefWidth="586.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifs.farn.FXMLDocumentController">
+  <children>
+    <SplitPane fx:id="secondPane" dividerPositions="0.3476027397260274" focusTraversable="true" layoutX="0.0" layoutY="14.0" prefHeight="437.0" prefWidth="586.0">
+      <items>
+        <AnchorPane maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="435.0" prefWidth="200.0">
+          <children>
+            <Button id="" layoutX="105.0" layoutY="399.0" mnemonicParsing="false" onAction="#CreatePicture" prefWidth="91.0" text="Create" />
+            <TextField id="" fx:id="IterationText" layoutX="15.0" layoutY="45.0" prefWidth="181.0" text="10" />
+            <Button id="" layoutX="10.0" layoutY="399.0" mnemonicParsing="false" onAction="#ClearPicture" prefWidth="91.0" text="Clear" />
+            <Label id="Iterationlabel" layoutX="10.0" layoutY="22.0" text="Iteration" />
+            <ColorPicker id="" fx:id="Color1" layoutX="10.0" layoutY="108.0" minHeight="27.0" prefHeight="37.0" prefWidth="181.0" />
+            <Label id="Farbe" layoutX="10.0" layoutY="83.0" text="Farben" />
+            <Line endX="88.0" endY="98.0" layoutX="115.0" layoutY="340.0" startX="88.0" startY="-330.0" />
+            <Line endX="103.0" endY="25.0" layoutX="100.0" layoutY="71.0" startX="-40.0" startY="25.0" />
+            <Line endX="36.0" layoutX="167.0" layoutY="33.0" startX="-94.0" startY="0.0" />
+            <ProgressBar fx:id="Progress" layoutX="10.0" layoutY="374.0" prefWidth="185.0" progress="0.0" />
+            <RadioButton fx:id="Radio1" layoutX="10.0" layoutY="336.0" mnemonicParsing="false" onAction="#onecolor" text="Einfarbig">
+              <font>
+                <Font size="15.0" />
+              </font>
+            </RadioButton>
+            <RadioButton fx:id="Radio4" layoutX="100.0" layoutY="336.0" mnemonicParsing="false" onAction="#fourcolor" selected="true" text="Vierfarbig" />
+            <ColorPicker id="Color" fx:id="Color2" layoutX="10.0" layoutY="158.0" minHeight="27.0" prefHeight="37.0" prefWidth="181.0" />
+            <ColorPicker id="Color" fx:id="Color3" layoutX="10.0" layoutY="208.0" minHeight="27.0" prefHeight="37.0" prefWidth="181.0" />
+            <ColorPicker id="Color" fx:id="Color4" layoutX="10.0" layoutY="258.0" minHeight="27.0" prefHeight="37.0" prefWidth="181.0" />
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="435.0" prefWidth="380.5" />
+      </items>
+    </SplitPane>
+    <MenuBar id="" layoutX="0.0" layoutY="0.0" prefWidth="586.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#Openfile" text="Open" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Save">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#SaveFile" text="Open" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#AboutAction" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </children>
+</AnchorPane>
