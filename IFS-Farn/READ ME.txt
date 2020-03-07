@@ -1,2 +1,0 @@
-Beim starten des Programmes, die  beigefügten .txt Dateien vom Programm einlesen lassen, um die Fraktale zu erzeugen. 
- 
